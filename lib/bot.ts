@@ -18,15 +18,7 @@ bot.on("message", (ctx) => ctx.reply("Получил ваше сообщение
 
 // Клавиатура будет отправлять в бота команду /about
 const keyboard = new InlineKeyboard()
-    .text("Обо мне", "/about");
-
-const keyboard = new InlineKeyboard()
-    .text("xd!", "/xd");
-
-bot.callbackQuery("/about", async (ctx) => {
-    await ctx.answerCallbackQuery(); // Уведомляем Telegram, что мы обработали запрос
-    await ctx.reply("Я бот? Я бот... Я Бот!");
-});
+    .text("xd", "/xd");
 
 bot.callbackQuery("/xd", async (ctx) => {
     await ctx.answerCallbackQuery(); // Уведомляем Telegram, что мы обработали запрос
