@@ -13,6 +13,12 @@ bot.command(
     (ctx) => ctx.reply("Добро пожаловать. Запущен и работает!",{ reply_markup: keyboard }),
 );
 
+bot.command(
+    "xd",
+    (ctx) => ctx.reply("xdxdxdxd",{ reply_markup: keyboard }),
+);
+
+
 // Обработайте другие сообщения.
 bot.on("message", (ctx) => ctx.reply("Получил ваше сообщение: " + ctx.message.text + " !",));
 
