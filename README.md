@@ -1,2 +1,3 @@
-# ProjectBot
-Politech Project Bot
+# Бот Random Coffee
+
+
